@@ -46,6 +46,9 @@ contract Election{
         return candidate[id].voteRecived;
     }
     
+    function checkVoted(address voter) public view returns (bool){
+        return hasVoted[voter];
+    }
 }
 
 

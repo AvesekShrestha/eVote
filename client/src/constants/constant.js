@@ -3,6 +3,25 @@ export const abi = [
     {
         "inputs": [
             {
+                "internalType": "address",
+                "name": "voter",
+                "type": "address"
+            }
+        ],
+        "name": "checkVoted",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
                 "internalType": "uint256",
                 "name": "id",
                 "type": "uint256"
@@ -136,4 +155,4 @@ export const abi = [
         "stateMutability": "nonpayable",
         "type": "function"
     }
-]
+] 

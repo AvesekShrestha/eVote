@@ -22,11 +22,18 @@ export default function Nomination() {
                 }, 2000);
             } else {
                 setShowFailed(true);
+                setTimeout(() => {
+                    setShowFailed(false)
+                }, 2000)
+
             }
 
         } catch (error) {
             console.log(error);
             setShowFailed(true);
+            setTimeout(() => {
+                setShowFailed(false)
+            }, 2000)
         }
     }
 
